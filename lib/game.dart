@@ -44,6 +44,12 @@ abstract class Game {
   /// Returns the game widget. Put this in your structure to start rendering and updating the game.
   /// You can add it directly to the runApp method or inside your widget structure (if you use vanilla screens and widgets).
   Widget get widget => builder.build(this);
+
+  /// Returns if the Widget should be repainted or not, as a default behaviour this always returns true
+  /// but you can override this if you want to create optimizations yourself
+  bool shouldRepaint() {
+    return true;
+  }
 }
 
 class WidgetBuilder {
@@ -284,7 +290,9 @@ class GameRenderBox extends RenderBox with WidgetsBindingObserver {
     }
     _scheduleTick();
     _update(timestamp);
-    markNeedsPaint();
+    if (game.shouldRepaint()) {
+      markNeedsPaint();
+    }
   }
 
   void _update(Duration now) {
