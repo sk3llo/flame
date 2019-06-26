@@ -312,11 +312,13 @@ class GameRenderBox extends RenderBox with WidgetsBindingObserver {
 
   @override
   void paint(PaintingContext context, Offset offset) {
-    context.canvas.save();
-    context.canvas.translate(
-        game.builder.offset.dx + offset.dx, game.builder.offset.dy + offset.dy);
-    game.render(context.canvas);
-    context.canvas.restore();
+    if (game.shouldRepaint()) {
+      context.canvas.save();
+      context.canvas.translate(
+          game.builder.offset.dx + offset.dx, game.builder.offset.dy + offset.dy);
+      game.render(context.canvas);
+      context.canvas.restore();
+    }
   }
 
   void _bindLifecycleListener() {
