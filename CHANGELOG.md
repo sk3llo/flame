@@ -1,3 +1,6 @@
+## next
+- Adding override paint parameter to Sprite
+
 ## 0.14.2
 - Refactoring BaseGame debugMode
 - Adding SpriteSheet class
