@@ -13,8 +13,8 @@ dependencies:
   audioplayers: ^0.13.1
   ordered_set: ^1.1.2
   path_provider: ^1.2.0
-  box2d_flame: ^0.4.2
-  synchronized: ^2.1.0
+  box2d_flame: ^0.4.4
+  synchronized: ^2.1.0+1
   tiled: ^0.2.1
   convert: ^2.0.1
   flutter_svg: ^0.13.1
