@@ -10,14 +10,14 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  audioplayers: ^0.13.0
+  audioplayers: ^0.13.1
   ordered_set: ^1.1.2
-  path_provider: ^1.1.0
+  path_provider: ^1.2.0
   box2d_flame: ^0.4.2
   synchronized: ^2.1.0
   tiled: ^0.2.1
   convert: ^2.0.1
-  flutter_svg: ^0.13.0+2
+  flutter_svg: ^0.13.1
   flare_flutter: ^1.5.4
 
 dev_dependencies:
