@@ -5,14 +5,14 @@ author: Luan Nico <luannico27@gmail.com>
 homepage: https://github.com/luanpotter/flame
 
 flutter:
-  uses-material-design: true
+  uses-material-design: false
 
 dependencies:
   flutter:
     sdk: flutter
   audioplayers: ^0.13.1
   ordered_set: ^1.1.2
-  path_provider: ^1.2.0
+#   path_provider: ^1.2.0
   box2d_flame: ^0.4.4
   synchronized: ^2.1.0+1
   tiled: ^0.2.1
